@@ -1,0 +1,22 @@
+
+# yuv video資訊
+width: 1920
+height: 1080
+format: YUV420
+
+# 編碼的block資訊
+block_size: BLOCK_8x8
+block_width: 8
+block_height: 8
+
+# 編碼資訊
+compress_type: JPEG_SEQUENTIAL
+quant_type: JPEG_QUANT_STANDARD
+entropy_type: HUFFMAN
+
+# 讀取檔案設定
+output_yuv_idct_dir: ./output/yuv/idct/
+input_bitstream_dir: ./output/bitstream/
+
+# 控制選項 (0: disable , 1: enable)
+save_idct_yuv_frame: 1

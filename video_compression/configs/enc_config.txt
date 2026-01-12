@@ -1,0 +1,27 @@
+
+# yuv video資訊
+input_path: ./videos/ReadySteadyGo_1920x1080_120fps_420_8bit_YUV.yuv
+width: 1920
+height: 1080
+format: YUV420
+
+# 編碼的block資訊
+block_size: BLOCK_8x8
+block_width: 8
+block_height: 8
+
+# 編碼資訊
+compress_type: JPEG_SEQUENTIAL
+quant_type: JPEG_QUANT_STANDARD
+entropy_type: HUFFMAN
+
+# 輸出檔案設定
+output_yuv_raw_dir: ./output/yuv/raw/
+output_bitstream_dir: ./output/bitstream/
+
+# 控制選項 (0: disable , 1: enable)
+save_yuv_raw_frame: 0
+
+# 控制編碼部分yuv frames
+truncate_yuv_frame: 1
+truncate_yuv_index: 2
